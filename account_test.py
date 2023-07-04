@@ -7,13 +7,15 @@ def main():
     saving = bankaccount.BankAccount(start_bal)
 
     pay = float(input('Сколько внести на счет? '))
-    print(f'Вношу на счет {pay:,.2f}$')
+    print('Вношу эту сумму на счет')
     saving.deposit(pay)
-    print(f'Сейчас на вашем счете {saving.get_balance():,.2f}$')
+
+    print(saving)
 
     cash = float(input('Какую сумму вы хотите снять? '))
+    print('Снимаю эту сумму со счета')
     saving.get_money(cash)
-    print(f'Остаток на вашем счете {saving.get_balance():,.2f}$')
+    print(saving)
 
 
 if __name__ == '__main__':
