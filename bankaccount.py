@@ -1,4 +1,4 @@
-class BankAccount:
+class BankAccount: #дебетовый счет
     def __init__(self, bal):
         self.__balance = bal
 
@@ -16,3 +16,5 @@ class BankAccount:
 
     def __str__(self):
         return f'Остаток составляет: {self.__balance: ,.2f}$'
+
+
